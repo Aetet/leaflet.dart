@@ -113,7 +113,7 @@ class Marker implements Layer {
     }
 
     var m = {};
-    if (icon != null) m['icon'] = icon._icon;
+    if (icon != null) m['icon'] = icon.jsIcon;
     if (clickable != null) m['clickable'] = clickable;
     if (draggable != null) m['draggable'] = draggable;
     if (keyboard != null) m['keyboard'] = keyboard;
