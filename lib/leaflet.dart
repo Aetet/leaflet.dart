@@ -51,6 +51,10 @@ class LeafletMap {
     _map.callMethod('addLayer', [layer.layer]);
   }
 
+  void removeLayer(Layer layer) {
+    _map.callMethod('removeLayer', [layer.layer]);
+  }
+
   void eachLayer(f) {
     _map.callMethod('eachLayer', [allowInterop(f)]);
   }
