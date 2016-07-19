@@ -51,6 +51,10 @@ class LeafletMap {
     _map.callMethod('addLayer', [layer.layer]);
   }
 
+  void eachLayer(f) {
+    _map.callMethod('eachLayer', [allowInterop(f)]);
+  }
+
   /// Returns the LatLngBounds of the current map view.
   LatLngBounds getBounds() {
     var llb = _map.callMethod('getBounds');

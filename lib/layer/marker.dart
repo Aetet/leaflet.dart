@@ -139,4 +139,8 @@ class Marker implements Layer {
   void bindPopup(popup) {
     layer.callMethod('bindPopup', [popup]);
   }
+
+  JsObject toGeoJSON() {
+    return layer.callMethod('toGeoJSON', []);
+  }
 }
